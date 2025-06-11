@@ -1,16 +1,15 @@
 import { useState } from "react"
 
+import Usuario from "./components/Usuario"
 import Perfil from "./components/Perfil"
-import Formulario from "./components/Formulario"
 import ReposList from "./components/ReposList"
 
 function App() {
-  const [formularioEstaVisivel, setFormularioEstaVisivel] = useState(true)
-  const [nomeUsuario, setNomeUsuario] = useState('') 
+  const [nomeUsuario, setNomeUsuario] = useState('')
 
   return(
     <>
-      <input type="text" onBlur={(e) => setNomeUsuario(e.target.value)} />
+      <Usuario nomeUsuario={nomeUsuario} setNomeUsuario={setNomeUsuario}/>
 
       {nomeUsuario.length > 4 && (
         <>
@@ -19,11 +18,6 @@ function App() {
         </>
       )}
       
-      {/* {formularioEstaVisivel && (
-        <Formulario />
-      )}
-
-      <button onClick={() => setFormularioEstaVisivel(!formularioEstaVisivel)} type="button">Toggle Form</button> */}
     </>
   )
 }

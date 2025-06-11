@@ -23,5 +23,15 @@
     margin-top: 0.5rem;
     padding: 0.5rem;
     text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
+.itemLink:hover {
+    background-color: var(--cor-principalDark);
+}
+
+.textError {
+    text-align: center;
+    color: red;
+}

@@ -1,0 +1,8 @@
+.textbox, .button {
+    padding: 0.1rem;
+    margin: 0.25rem;
+}
+
+.button {
+    cursor: pointer;
+}
