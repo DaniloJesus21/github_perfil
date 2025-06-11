@@ -1,0 +1,21 @@
+.header {
+    background-color: var(--cor-principal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10.12rem 0 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.avatar {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    border: 2px solid var(--cor-secundaria);
+    margin-bottom: 0.5rem;
+}
+
+.name {
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+}
